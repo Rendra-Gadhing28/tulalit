@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tl-01",
+    "hash": "7a8b9c1",
+    "title": "feat(mpls): Inisialisasi Repository XII PPLG 3",
+    "date": "18 Juli 2023",
+    "tag": "MPLS",
+    "story": "Hari pertama menginjakkan kaki di gedung SMK. Masih memakai seragam SMP, saling melirik canggung di barisan lapangan, dan belum tahu kalau 3 tahun ke depan bakal jadi keluarga begadang di depan monitor lab komputer.",
+    "photos": ["/img/gallery/01.webp"]
+  },
+  {
+    "id": "tl-02",
+    "hash": "3c4d5e2",
+    "title": "feat(kelas-x): Hello World & Titik Koma Pertama",
+    "date": "10 November 2023",
+    "tag": "Kelas X",
+    "story": "Pertama kali berkenalan dengan algoritma pemrograman dasar, flowchart rumit, dan pusingnya lupa tanda titik koma (;). Mulai terbentuk circle 'Sogadev' yang fokus ngulik dan 'Tulalit' yang selalu bikin suasana lab pecah dengan gelak tawa.",
+    "photos": ["/img/gallery/02.webp"]
+  },
+  {
+    "id": "tl-03",
+    "hash": "9f1a2b3",
+    "title": "feat(kelas-xi): Naik Level ke Web & Game Engine",
+    "date": "24 Mei 2024",
+    "tag": "Kelas XI",
+    "story": "Level up! Mulai kenal JavaScript, CSS layouting yang berantakan, serta Unity 3D. Lab komputer sudah seperti kos-kosan kedua: penuh botol kopi, kabel charger bercabang, dan suara kipas PC yang menderu kencang.",
+    "photos": ["/img/gallery/03.webp"]
+  },
+  {
+    "id": "tl-04",
+    "hash": "5d6e7f4",
+    "title": "feat(pkl): Deploy ke Dunia Nyata (Praktik Kerja Lapangan)",
+    "date": "01 Agustus 2024",
+    "tag": "PKL",
+    "story": "Tersebar ke berbagai software house, instansi, dan studio gim. Belajar merasakan revisi klien dadakan, git merge conflict skala industri, dan nikmatnya uang saku pertama. Kerinduan kumpul kelas mulai terasa di sini.",
+    "photos": ["/img/gallery/04.webp"]
+  },
+  {
+    "id": "tl-05",
+    "hash": "2b3c4d5",
+    "title": "feat(study-tour): Refreshing Sebelum Masa Kritis",
+    "date": "15 Januari 2025",
+    "tag": "Study Tour",
+    "story": "Liburan kelas bersama ke Yogyakarta dan Bali! Naik bus bernyanyi bersama, tidur saling tumpuk, hunting foto polaroid di pantai, dan sejenak melupakan deretan error merah di terminal VS Code.",
+    "photos": ["/img/gallery/05.webp"]
+  },
+  {
+    "id": "tl-06",
+    "hash": "8e9f0a6",
+    "title": "feat(ujikom): Uji Kompetensi Keahlian (UKK)",
+    "date": "20 Februari 2025",
+    "tag": "Uji Kompetensi",
+    "story": "Ujian kompetensi paling menegangkan di depan asesor eksternal. Jantung berdegup kencang saat live demo aplikasi. Alhamdulillah seluruh siswa XII PPLG 3 dinyatakan Kompeten dengan predikat membanggakan!",
+    "photos": ["/img/gallery/06.webp"]
+  },
+  {
+    "id": "tl-07",
+    "hash": "4a5b6c7",
+    "title": "feat(final-project): Begadang Akbar Karya Akhir",
+    "date": "10 April 2025",
+    "tag": "Tugas Akhir",
+    "story": "Minggu-minggu marathon menyelesaikan prototipe aplikasi dan game akhir. Saling bantu fix bug teman sebelah, berbagi mie instan tengah malam, dan saling menguatkan saat mental nyaris habis.",
+    "photos": ["/img/gallery/07.webp"]
+  },
+  {
+    "id": "tl-08",
+    "hash": "1f2e3d8",
+    "title": "release(v1.0): Git Push Kenangan Sebelum Bel Terakhir",
+    "date": "15 Juni 2026",
+    "tag": "Wisuda",
+    "story": "Bel terakhir berbunyi. Toga berkibar di udara, air mata haru bercampur senyum bangga. Tiga tahun penuh perjuangan resmi di-merge ke branch kehidupan nyata. Sampai jumpa di puncak kesuksesan, kawan!",
+    "photos": ["/img/gallery/08.webp"]
+  }
+]

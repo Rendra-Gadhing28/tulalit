@@ -1,0 +1,72 @@
+[
+  {
+    "id": "q-01",
+    "quote": "C'est la vie, mais avec du code propre.",
+    "author": "Arkamudya (Buer)",
+    "role": "Project Lead",
+    "color": "mustard"
+  },
+  {
+    "id": "q-02",
+    "quote": "Poco a poco se anda lejos, amigo.",
+    "author": "Ezar (Penyu)",
+    "role": "Game Dev",
+    "color": "coral"
+  },
+  {
+    "id": "q-03",
+    "quote": "La beauté est dans chaque pixel et détail.",
+    "author": "Rendra (Man)",
+    "role": "Frontend Lead",
+    "color": "sky"
+  },
+  {
+    "id": "q-04",
+    "quote": "El orden siempre vence al caos del sistema.",
+    "author": "Najwa (Ridwan)",
+    "role": "Backend Architect",
+    "color": "sage"
+  },
+  {
+    "id": "q-05",
+    "quote": "L'art de vivre, de créer et de rêver.",
+    "author": "Kalyca (Rini)",
+    "role": "UI/UX",
+    "color": "mustard"
+  },
+  {
+    "id": "q-06",
+    "quote": "La paciencia y el rigor son la clave del éxito.",
+    "author": "Sheza (Sezoo)",
+    "role": "QA Tester",
+    "color": "coral"
+  },
+  {
+    "id": "q-07",
+    "quote": "Toujours viser plus haut vers de nouveaux horizons.",
+    "author": "Tasya (Seiya)",
+    "role": "Mobile Dev",
+    "color": "sky"
+  },
+  {
+    "id": "q-08",
+    "quote": "Unidos somos invencibles, familia XII PPLG 3.",
+    "author": "Anis (Ibuk)",
+    "role": "Scrum Master",
+    "color": "sage"
+  },
+  {
+    "id": "q-09",
+    "quote": "Rien ne se perd, rien ne se crée, tout se transforme.",
+    "author": "Davina (Om)",
+    "role": "DevOps",
+    "color": "mustard"
+  },
+  {
+    "id": "q-10",
+    "quote": "Hasta el final del camino con orgullo y honor.",
+    "author": "Dani (Mranggen)",
+    "role": "Security & Network",
+    "color": "coral"
+  }
+]

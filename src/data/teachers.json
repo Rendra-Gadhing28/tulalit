@@ -1,0 +1,34 @@
+[
+  {
+    "id": "tch-01",
+    "name": "Ibu Ratna Dewi, S.Kom., M.T.",
+    "subject": "Wali Kelas & Pemrograman Berorientasi Objek",
+    "message": "Untuk anak-anakku XII PPLG 3, kalian adalah angkatan paling unik dan penuh kejutan. Dari yang awalnya pemalu, sering telat kumpul tugas, sampai akhirnya mampu membuat karya-karya luar biasa. Ingat, di luar sana mungkin ada error yang tidak bisa di-solve dengan Stack Overflow, tapi kalian punya tekad baja untuk melewatinya. Ibu selalu bangga pada kalian semua.",
+    "photo": "/img/teachers/01.webp",
+    "isHomeroom": true
+  },
+  {
+    "id": "tch-02",
+    "name": "Bapak Joko Prasetyo, S.Pd.",
+    "subject": "Pemrograman Web & Mobile",
+    "message": "Koding itu ibarat hidup: kadang butuh banyak titik temu dan komitmen. Jangan takut bikin salah, error itu guru terbaik. Sukses selalu anak-anak hebat!",
+    "photo": "/img/teachers/02.webp",
+    "isHomeroom": false
+  },
+  {
+    "id": "tch-03",
+    "name": "Ibu Sri Wahyuni, M.Pd.",
+    "subject": "Basis Data & Rekayasa Perangkat Lunak",
+    "message": "Relasi data boleh dinormalisasi sampai bentuk ketiga (3NF), tapi tali persaudaraan kelas kalian jangan sampai pernah terputus. Jaga nama baik almamater.",
+    "photo": "/img/teachers/03.webp",
+    "isHomeroom": false
+  },
+  {
+    "id": "tch-04",
+    "name": "Bapak Hendra Gunawan, S.T.",
+    "subject": "Pengembangan Gim & Grafika Komputer",
+    "message": "Game over di kehidupan nyata tidak ada tombol restart, tapi kalian selalu punya opsi untuk terus mencoba level baru. Teruslah berkarya dan taklukkan dunia!",
+    "photo": "/img/teachers/04.webp",
+    "isHomeroom": false
+  }
+]

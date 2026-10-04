@@ -1,0 +1,54 @@
+{
+  "votingOpen": true,
+  "revealDate": "2026-06-15T00:00:00+07:00",
+  "categories": [
+    {
+      "id": "award-01",
+      "title": "Paling Tulalit",
+      "description": "Juara loading 99%, paling sering bengong pas ditanya guru, tapi selalu bikin seisi lab ngakak.",
+      "candidates": "all"
+    },
+    {
+      "id": "award-02",
+      "title": "Paling Rajin Commit",
+      "description": "Commit git jam 2 pagi, jam 4 subuh, sampai weekend pun tetap ada grafik hijau GitHub.",
+      "candidates": "all"
+    },
+    {
+      "id": "award-03",
+      "title": "Paling Sering 'Bentar Lagi Selesai'",
+      "description": "Kata andalan pas ditagih tugas kelompok padahal baru bikin file index.html kosongan.",
+      "candidates": "all"
+    },
+    {
+      "id": "award-04",
+      "title": "Paling Kalem Tapi Jago",
+      "description": "Duduk di pojokan lab diam tanpa suara, tiba-tiba projeknya sudah dideploy ke production.",
+      "candidates": "all"
+    },
+    {
+      "id": "award-05",
+      "title": "Paling Banyak Bug (Bug Magnet)",
+      "description": "Kodingan orang lain aman, giliran dicompile di laptopnya langsung seribu error tak dikenal.",
+      "candidates": "all"
+    },
+    {
+      "id": "award-06",
+      "title": "Ter-Game Dev Sejati",
+      "description": "Buka VS Code cuma kamuflase, aslinya lagi running Unity, main gim, atau ngulik physics.",
+      "candidates": "all"
+    },
+    {
+      "id": "award-07",
+      "title": "Paling Rajin Piket & Tertib",
+      "description": "Sosok pahlawan penata kabel lab, pembersih bungkus snack, dan pengunci pintu kelas.",
+      "candidates": "all"
+    },
+    {
+      "id": "award-08",
+      "title": "Paling Renyah Ketawanya",
+      "description": "Suara tawanya kedengaran sampai ruang guru sebelah, mood maker sejati XII PPLG 3.",
+      "candidates": "all"
+    }
+  ]
+}

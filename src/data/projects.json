@@ -1,0 +1,68 @@
+[
+  {
+    "id": "proj-01",
+    "title": "Tragedi Gorengan Kantin Bu Sari",
+    "description": "Hari paling kelam: gorengan habis 10 menit sebelum jam istirahat. Antrean 30 orang, dua teman hampir pingsan kelaparan, dan berakhir makan kerupuk doang di kelas.",
+    "category": "Web",
+    "techStack": ["Gorengan", "Antrian Panjang", "Kerupuk Darurat", "Air Galon"],
+    "authors": ["Arkamudya", "Rendra", "Najwa"],
+    "image": "/img/projects/01.webp",
+    "demoUrl": null,
+    "repoUrl": null
+  },
+  {
+    "id": "proj-02",
+    "title": "Drama Pensi Malam yang Baper",
+    "description": "Penampilan malam pensi yang berakhir nangis bareng di backstage. Band kelas bawain lagu galau, semua ikut nyanyi, dan Bu Wali sampai tepuk tangan sambil usap mata.",
+    "category": "Game",
+    "techStack": ["Live Band", "Tata Lampu Kilat", "Baju Kebaya Rapi", "Sound System Ngadat"],
+    "authors": ["Ezar", "Sheza", "Dani"],
+    "image": "/img/projects/02.webp",
+    "demoUrl": null,
+    "repoUrl": null
+  },
+  {
+    "id": "proj-03",
+    "title": "Study Tour Malam: Misi Sneak Out",
+    "description": "Operasi rahasia jam 1 malam: kabur ke minimarket hotel. 12 orang, senter hp, sandal jepit, dan berhasil balik sebelum guru patroli. Momen paling menegangkan sekaligus paling lucu seumur hidup.",
+    "category": "Mobile",
+    "techStack": ["Senter HP", "Google Maps Offline", "Sandal Jepit", "Mie Instan Kamar"],
+    "authors": ["Tasya", "Davina", "Anis"],
+    "image": "/img/projects/03.webp",
+    "demoUrl": null,
+    "repoUrl": null
+  },
+  {
+    "id": "proj-04",
+    "title": "Perang Air Jam Kosong Legendaris",
+    "description": "Guru kosong 2 jam = perang air epik di lantai 2. Ember, botol minum, bahkan tisu basah jadi senjata. Kelas basah kuyup, jas lab dijemur di jendela, dan tiga orang tugas piket tambahan.",
+    "category": "UI/UX",
+    "techStack": ["Botol Minum", "Tisu Basah", "Ember Cadangan", "Lap Kelas"],
+    "authors": ["Kalyca", "Rendra"],
+    "image": "/img/projects/04.webp",
+    "demoUrl": null,
+    "repoUrl": null
+  },
+  {
+    "id": "proj-05",
+    "title": "Lab Komputer: Komputer Hantu PC-07",
+    "description": "PC nomor 7 selalu restart sendiri di saat paling kritis. Udah jadi mitos: siapa yang kena PC-07 pas UKK, nasibnya ditentukan semesta. Akhirnya ada yang tempel jimat di tower-nya.",
+    "category": "Web",
+    "techStack": ["Windows XP", "Blue Screen", "Jimat Stiker", "Doa Bersama"],
+    "authors": ["Semua PPLG 3"],
+    "image": "/img/projects/05.webp",
+    "demoUrl": null,
+    "repoUrl": null
+  },
+  {
+    "id": "proj-06",
+    "title": "Lomba Voli Antar Kelas: Comeback Epik",
+    "description": "Kalah 0-2, diketawain XII IPA, lalu bangkit menang 3-2 di set penentuan. Semua teriak, guru BK ikut joget di pinggir lapangan, dan trofi diplokimbo ke seluruh koridor sekolah.",
+    "category": "Game",
+    "techStack": ["Semangat 45", "Strategi Dadakan", "Keringat Liter", "Yel-yel Kelas"],
+    "authors": ["Tim Voli PPLG 3"],
+    "image": "/img/projects/06.webp",
+    "demoUrl": null,
+    "repoUrl": null
+  }
+]

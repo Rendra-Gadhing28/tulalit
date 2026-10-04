@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Design Tokens ─── */
+:root {
+  --color-paper-light: #FFFDF9;
+  --color-paper-base: #FFF8E7;
+  --color-paper-dark: #F7F1E3;
+  --color-paper-lines: #E5DEC9;
+  --color-ink-navy: #1F2937;
+  --color-ink-brown: #6B4F3A;
+  --color-ink-muted: #64748B;
+}
+
+.dark {
+  --color-paper-light: #131C31;
+  --color-paper-base: #0B1120;
+  --color-paper-dark: #080D1A;
+  --color-paper-lines: #1E293B;
+  --color-ink-navy: #F8FAFC;
+  --color-ink-brown: #CBD5E1;
+  --color-ink-muted: #94A3B8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ─── Body — Ruled Notebook Paper (Pure CSS, Zero SVG Filter Lag) ─── */
+body {
+  background-color: var(--color-paper-base);
+  color: var(--color-ink-navy);
+  font-family: var(--font-plus-jakarta), sans-serif;
+  background-image:
+    /* ruled lines */
+    linear-gradient(to bottom, transparent 23px, var(--color-paper-lines) 24px),
+    /* left margin line */
+    linear-gradient(to right, transparent 56px, #F4C7C3 57px, transparent 58px);
+  background-size: 100% 24px, 100% 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Dark mode body — no ruled lines, use subtle dot grid instead */
+html.dark body {
+  background-image:
+    radial-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* ─── Scrollbar Utility ─── */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ─── Washi Tape Utilities ─── */
+.tape {
+  position: absolute;
+  pointer-events: none;
+  height: 22px;
+  opacity: 0.88;
+  border-top: 1px solid rgba(255,255,255,0.4);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+}
+
+.tape-mustard {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(244,185,66,0.78),
+    rgba(244,185,66,0.78) 4px,
+    rgba(254,240,138,0.82) 4px,
+    rgba(254,240,138,0.82) 8px
+  );
+}
+
+.tape-sky {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(125,211,252,0.72),
+    rgba(125,211,252,0.72) 4px,
+    rgba(186,230,253,0.78) 4px,
+    rgba(186,230,253,0.78) 8px
+  );
+}
+
+.tape-coral {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(255,107,107,0.72),
+    rgba(255,107,107,0.72) 4px,
+    rgba(255,182,182,0.78) 4px,
+    rgba(255,182,182,0.78) 8px
+  );
+}
+
+.tape-sage {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(157,192,139,0.72),
+    rgba(157,192,139,0.72) 4px,
+    rgba(187,247,208,0.78) 4px,
+    rgba(187,247,208,0.78) 8px
+  );
+}
+
+/* ─── Paper Texture Overlay for Cards ─── */
+.paper-texture {
+  position: relative;
+}
+
+/* ─── Corkboard Texture for Guestbook Wall ─── */
+.corkboard {
+  background-color: #B88E5E;
+  border: 3px solid #8E6534;
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.22), 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.dark .corkboard {
+  background-color: #261A0C;
+  border-color: #422915;
+}
+
+/* ─── Holographic Shimmer (Trading Cards) ─── */
+@keyframes holoShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.holo-sheen {
+  background: linear-gradient(
+    125deg,
+    transparent 20%,
+    rgba(255,0,128,0.12) 30%,
+    rgba(0,255,255,0.12) 40%,
+    rgba(128,0,255,0.10) 50%,
+    rgba(255,255,0,0.10) 60%,
+    rgba(0,255,128,0.12) 70%,
+    transparent 80%
+  );
+  background-size: 300% 300%;
+  animation: holoShift 4s ease infinite;
+  mix-blend-mode: color-dodge;
+}
+
+/* ─── Commit Node Pulse ─── */
+@keyframes commitPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(244,185,66,0.5); }
+  50%       { box-shadow: 0 0 0 8px rgba(244,185,66,0); }
+}
+
+.commit-pulse {
+  animation: commitPulse 2.4s ease-in-out infinite;
+}
+
+.commit-pulse-release {
+  animation: commitPulse 1.6s ease-in-out infinite;
+  --tw-shadow-color: rgba(255,107,107,0.5);
+}
+
+/* ─── Wax Seal ─── */
+.wax-seal {
+  position: relative;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #DC2626, #991B1B 60%, #7F1D1D);
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.4),
+    inset 0 2px 4px rgba(255,255,255,0.15),
+    inset 0 -3px 6px rgba(0,0,0,0.3);
+}
+.wax-seal::after {
+  content: '✦';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,200,200,0.7);
+  font-size: 1.4em;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+/* ─── Podium Gradient ─── */
+.podium-gold {
+  background: linear-gradient(180deg, #FDE68A 0%, #F59E0B 40%, #D97706 100%);
+  border-top: 3px solid #FCD34D;
+}
+.podium-silver {
+  background: linear-gradient(180deg, #F1F5F9 0%, #94A3B8 40%, #64748B 100%);
+  border-top: 3px solid #CBD5E1;
+}
+.podium-bronze {
+  background: linear-gradient(180deg, #D4A574 0%, #92400E 40%, #78350F 100%);
+  border-top: 3px solid #B45309;
+}
+
+/* ─── Tape Stamp / Postmark ─── */
+.stamp-border {
+  border: 2px dashed;
+  border-radius: 2px;
+  position: relative;
+}
+.stamp-border::before {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border: 1px solid currentColor;
+  opacity: 0.3;
+  border-radius: 1px;
+  pointer-events: none;
+}
+
+/* ─── Navigation Active State ─── */
+@keyframes navUnderline {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+/* ─── Reduced Motion ─── */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-float-slow,
+  .animate-pulse-glow,
+  .animate-tape-wobble,
+  .animate-spin {
+    animation: none !important;
+  }
+}

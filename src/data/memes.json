@@ -1,0 +1,44 @@
+[
+  {
+    "id": "meme-01",
+    "title": "It Works On My Machine",
+    "image": "/img/memes/01.webp",
+    "initialLikes": 42,
+    "caption": "Pas diuji di laptop sendiri lancar, pas dipanggil Pak Guru langsung blank screen biru."
+  },
+  {
+    "id": "meme-02",
+    "title": "Git Merge Conflict Jam 11 Malam",
+    "image": "/img/memes/02.webp",
+    "initialLikes": 38,
+    "caption": "Ketika 4 orang push ke branch main secara bersamaan 10 menit sebelum deadline."
+  },
+  {
+    "id": "meme-03",
+    "title": "Siput Tulalit Menanti Kompilasi",
+    "image": "/img/memes/03.webp",
+    "initialLikes": 65,
+    "caption": "Kompilasi Gradle 99%... ditinggal beli gorengan di kantin masih tetap 99%."
+  },
+  {
+    "id": "meme-04",
+    "title": "Kasta Duduk di Lab Komputer",
+    "image": "/img/memes/04.webp",
+    "initialLikes": 51,
+    "caption": "Pojok belakang dekat jendela: spot keramat para master game dan sleep enthusiasts."
+  },
+  {
+    "id": "meme-05",
+    "title": "Revisi Desain ke-99",
+    "image": "/img/memes/05.webp",
+    "initialLikes": 29,
+    "caption": "'Tolong warnanya dibuat agak warm tapi tetap cold, dan logo-nya lebih berwibawa'."
+  },
+  {
+    "id": "meme-06",
+    "title": "Wisuda Merdeka",
+    "image": "/img/memes/06.webp",
+    "initialLikes": 88,
+    "caption": "Bebas dari tugas sekolah, tapi selamat datang di pertarungan interview kerja nyata."
+  }
+]

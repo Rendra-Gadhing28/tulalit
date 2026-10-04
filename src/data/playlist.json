@@ -1,0 +1,50 @@
+[
+  {
+    "id": "track-01",
+    "title": "Ingatlah Hari Ini",
+    "artist": "Project Pop",
+    "duration": "4:12",
+    "cover": "/img/playlist/01.webp",
+    "spotifyUri": "https://open.spotify.com/embed/track/4g2CofqjQ8YjS4F7yF8Fw4"
+  },
+  {
+    "id": "track-02",
+    "title": "Kisah Klasik Untuk Masa Depan",
+    "artist": "Sheila On 7",
+    "duration": "3:58",
+    "cover": "/img/playlist/02.webp",
+    "spotifyUri": "https://open.spotify.com/embed/track/2N3hR3G6mH6iU7Q4Z1y5A9"
+  },
+  {
+    "id": "track-03",
+    "title": "Sebuah Kisah Klasik",
+    "artist": "Sheila On 7",
+    "duration": "4:05",
+    "cover": "/img/playlist/03.webp",
+    "spotifyUri": "https://open.spotify.com/embed/track/1L8gZ4J9x1Y0E7K2L8w9P0"
+  },
+  {
+    "id": "track-04",
+    "title": "Lofi Code & Chill",
+    "artist": "Sogadev Beats",
+    "duration": "2:45",
+    "cover": "/img/playlist/04.webp",
+    "spotifyUri": "https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b"
+  },
+  {
+    "id": "track-05",
+    "title": "Monokrom",
+    "artist": "Tulus",
+    "duration": "3:35",
+    "cover": "/img/playlist/05.webp",
+    "spotifyUri": "https://open.spotify.com/embed/track/5uCaxft7L3a9L2t3qX5V6W"
+  },
+  {
+    "id": "track-06",
+    "title": "Sampai Jumpa",
+    "artist": "Endank Soekamti",
+    "duration": "4:30",
+    "cover": "/img/playlist/06.webp",
+    "spotifyUri": "https://open.spotify.com/embed/track/7lPN2DXiMsVn9I3k1u9e5z"
+  }
+]

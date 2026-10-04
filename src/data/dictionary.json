@@ -1,0 +1,74 @@
+[
+  {
+    "id": "dict-001",
+    "word": "tu·la·lit",
+    "phonetic": "/tu-la-lit/",
+    "type": "n",
+    "definition": "Kondisi proses loading otak yang terhenti di 99% saat ditanya guru.",
+    "example": "\"Maaf Bu, saya lagi tulalit—soalnya kemarin begadang compile sampai subuh.\"",
+    "emoji": "🧠"
+  },
+  {
+    "id": "dict-002",
+    "word": "ben·tar la·gi",
+    "phonetic": "/ben-tar la-gi/",
+    "type": "adv",
+    "definition": "Satuan waktu tidak terbatas; berkisar antara 5 menit hingga 3 minggu kemudian.",
+    "example": "\"Tugasnya bentar lagi kelar kok, Pak.\" — diucapkan jam 11 malam sehari sebelum deadline.",
+    "emoji": "⏳"
+  },
+  {
+    "id": "dict-003",
+    "word": "git push --force",
+    "phonetic": "/git-push-fors/",
+    "type": "v",
+    "definition": "Tindakan kepasrahan tingkat tinggi ketika merge conflict sudah tidak tertolong.",
+    "example": "\"Udah 3 jam rebase, akhirnya git push --force aja. Semoga yang lain maafin.\"",
+    "emoji": "💀"
+  },
+  {
+    "id": "dict-004",
+    "word": "ko·pi kan·tin",
+    "phonetic": "/ko-pi kan-tin/",
+    "type": "n",
+    "definition": "Bahan bakar utama untuk compile kodingan jam 3 subuh di lab.",
+    "example": "\"Tanpa kopi kantin, praktikum jaringan semalam pasti nggak kelar.\"",
+    "emoji": "☕"
+  },
+  {
+    "id": "dict-005",
+    "word": "se·mi·co·lon",
+    "phonetic": "/se-mi-ko-lon/",
+    "type": "n",
+    "definition": "Tanda baca gaib (;) berukuran 1 pixel penyebab 87 error merah di VS Code.",
+    "example": "\"Satu jam debugging ternyata cuma kurang semicolon di baris 3.\"",
+    "emoji": ";"
+  },
+  {
+    "id": "dict-006",
+    "word": "co·lo·kan po·jok",
+    "phonetic": "/co-lo-kan po-jok/",
+    "type": "n",
+    "definition": "Wilayah sengketa paling panas di sekeliling ruang lab komputer.",
+    "example": "\"Dia udah duduk jam 6 pagi demi dapat colokan pojok sebelum praktikum.\"",
+    "emoji": "🔌"
+  },
+  {
+    "id": "dict-007",
+    "word": "jam ko·song",
+    "phonetic": "/jam ko-song/",
+    "type": "n",
+    "definition": "Momen paling damai dalam sejarah peradaban kelas XII PPLG 3.",
+    "example": "\"Jam kosong hari ini diisi dengan tidur, main gim, dan pura-pura belajar.\"",
+    "emoji": "😴"
+  },
+  {
+    "id": "dict-008",
+    "word": "tes·ter ta·ngan ko·song",
+    "phonetic": "/tes-ter/",
+    "type": "n",
+    "definition": "Teman yang nemu bug fatal tepat 2 menit sebelum presentasi dimulai.",
+    "example": "\"Si Sheza tester tangan kosong, baru diklik sekali langsung error 500.\"",
+    "emoji": "🐛"
+  }
+]

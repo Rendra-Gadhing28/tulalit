@@ -1,0 +1,154 @@
+[
+  {
+    "id": "mem-001",
+    "name": "Arkamudya",
+    "nickname": "Buer",
+    "role": "Project Lead & Full Stack",
+    "rarity": "Legendary",
+    "quote": "C'est la vie, mais avec du code propre.",
+    "favoriteLang": "TypeScript & Next.js",
+    "hobby": "Nyetel lofi sambil mikirin arsitektur sistem",
+    "photo": "/img/members/001.webp",
+    "stickers": ["dev-code-tag", "momen-bintang", "dev-coffee"],
+    "social": {
+      "instagram": "https://instagram.com/",
+      "github": "https://github.com/"
+    }
+  },
+  {
+    "id": "mem-002",
+    "name": "Ezar",
+    "nickname": "Penyu",
+    "role": "Game Dev & Physics",
+    "rarity": "Legendary",
+    "quote": "Poco a poco se anda lejos, amigo.",
+    "favoriteLang": "C# & Godot Engine",
+    "hobby": "Bikin gim 3D tapi hitbox sering nembus",
+    "photo": "/img/members/002.webp",
+    "stickers": ["gim-controller", "gim-sword", "gim-heart"],
+    "social": {
+      "instagram": "https://instagram.com/"
+    }
+  },
+  {
+    "id": "mem-003",
+    "name": "Rendra",
+    "nickname": "Man",
+    "role": "Frontend Lead & Animation",
+    "rarity": "Legendary",
+    "quote": "La beauté est dans chaque pixel et détail.",
+    "favoriteLang": "React & Tailwind CSS",
+    "hobby": "Koleksi palet warna aesthetic dan animasi spring",
+    "photo": "/img/members/003.webp",
+    "stickers": ["dev-react-atom", "momen-kamera", "ekspresi-peace"],
+    "social": {
+      "instagram": "https://instagram.com/",
+      "github": "https://github.com/"
+    }
+  },
+  {
+    "id": "mem-004",
+    "name": "Najwa",
+    "nickname": "Ridwan",
+    "role": "Backend Architect",
+    "rarity": "Legendary",
+    "quote": "El orden siempre vence al caos del sistema.",
+    "favoriteLang": "Go & PostgreSQL",
+    "hobby": "Ngulik relasi database sampai ternormalisasi 3NF",
+    "photo": "/img/members/004.webp",
+    "stickers": ["dev-terminal", "dev-git-commit", "dev-coffee"],
+    "social": {
+      "instagram": "https://instagram.com/"
+    }
+  },
+  {
+    "id": "mem-005",
+    "name": "Kalyca",
+    "nickname": "Rini",
+    "role": "UI/UX Designer",
+    "rarity": "Legendary",
+    "quote": "L'art de vivre, de créer et de rêver.",
+    "favoriteLang": "Figma & CSS",
+    "hobby": "Desain scrapbook retro dan eksplorasi tipografi",
+    "photo": "/img/members/005.webp",
+    "stickers": ["momen-tape", "momen-pin", "ekspresi-jempol"],
+    "social": {
+      "instagram": "https://instagram.com/"
+    }
+  },
+  {
+    "id": "mem-006",
+    "name": "Sheza",
+    "nickname": "Sezoo",
+    "role": "QA & Tester",
+    "rarity": "Legendary",
+    "quote": "La paciencia y el rigor son la clave del éxito.",
+    "favoriteLang": "Jest & Cypress",
+    "hobby": "Nge-spam tombol submit sampai edge case ketemu",
+    "photo": "/img/members/006.webp",
+    "stickers": ["dev-bug", "sekolah-badge", "ekspresi-loading"],
+    "social": {
+      "instagram": "https://instagram.com/"
+    }
+  },
+  {
+    "id": "mem-007",
+    "name": "Tasya",
+    "nickname": "Seiya",
+    "role": "Mobile Developer",
+    "rarity": "Legendary",
+    "quote": "Toujours viser plus haut vers de nouveaux horizons.",
+    "favoriteLang": "Flutter & Dart",
+    "hobby": "Ngoprek widget tree sambil dengerin playlist lofi",
+    "photo": "/img/members/007.webp",
+    "stickers": ["dev-code-tag", "gim-coin", "momen-confetti"],
+    "social": {
+      "instagram": "https://instagram.com/"
+    }
+  },
+  {
+    "id": "mem-008",
+    "name": "Anis",
+    "nickname": "Ibuk",
+    "role": "Scrum Master & Penjaga Kelas",
+    "rarity": "Legendary",
+    "quote": "Unidos somos invencibles, familia XII PPLG 3.",
+    "favoriteLang": "Markdown & Notion",
+    "hobby": "Menertibkan warga lab yang terlalu asik main gim",
+    "photo": "/img/members/008.webp",
+    "stickers": ["sekolah-bell", "sekolah-buku", "ekspresi-api"],
+    "social": {
+      "instagram": "https://instagram.com/"
+    }
+  },
+  {
+    "id": "mem-009",
+    "name": "Davina",
+    "nickname": "Om",
+    "role": "DevOps & Cloud Engineer",
+    "rarity": "Legendary",
+    "quote": "Rien ne se perd, rien ne se crée, tout se transforme.",
+    "favoriteLang": "Docker & Bash",
+    "hobby": "Nongkrong santai sambil monitor log server Vercel",
+    "photo": "/img/members/009.webp",
+    "stickers": ["dev-terminal", "ekspresi-siput", "dev-bug"],
+    "social": {
+      "instagram": "https://instagram.com/"
+    }
+  },
+  {
+    "id": "mem-010",
+    "name": "Dani",
+    "nickname": "Mranggen",
+    "role": "Security & Network",
+    "rarity": "Legendary",
+    "quote": "Hasta el final del camino con orgullo y honor.",
+    "favoriteLang": "Python & Kali Linux",
+    "hobby": "Ngecek port WiFi lab dan bawa bekal gorengan",
+    "photo": "/img/members/010.webp",
+    "stickers": ["gim-ghost", "sekolah-pensil", "ekspresi-nangis"],
+    "social": {
+      "instagram": "https://instagram.com/"
+    }
+  }
+]

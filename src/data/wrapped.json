@@ -1,0 +1,110 @@
+{
+  "academicYear": "2025 - 2027",
+  "className": "XII PPLG 3",
+  "slides": [
+    {
+      "id": "wrap-01",
+      "title": "Waktu Berlalu Begitu Cepat...",
+      "subtitle": "Total Perjalanan Kelas Kita",
+      "metric": "1.065",
+      "metricLabel": "HARI BERSAMA",
+      "description": "Sejak hari pertama upacara berseragam putih biru, hingga detik bel kepulangan terakhir berbunyi.",
+      "bgColor": "#1E293B",
+      "accentColor": "#F4B942",
+      "stickerId": "sekolah-bell"
+    },
+    {
+      "id": "wrap-02",
+      "title": "Produktivitas Tanpa Batas",
+      "subtitle": "Jejak Coding di Lab Komputer",
+      "metric": "8.420+",
+      "metricLabel": "GIT COMMITS",
+      "description": "Termasuk 1.200 commit dengan pesan: 'fix bug', 'fix typo lagi', dan 'bismillah jalan'.",
+      "bgColor": "#0F172A",
+      "accentColor": "#34D399",
+      "stickerId": "dev-git-commit"
+    },
+    {
+      "id": "wrap-03",
+      "title": "Bahan Bakar Begadang",
+      "subtitle": "Kopi & Minuman Sachet Kantin",
+      "metric": "3.580",
+      "metricLabel": "CANGKIR KOPI TERTEGUK",
+      "description": "Kantin Mbak Sri adalah sponsor tidak resmi kelulusan seluruh siswa XII PPLG 3.",
+      "bgColor": "#451A03",
+      "accentColor": "#FBBF24",
+      "stickerId": "dev-coffee",
+      "media": {
+        "type": "video",
+        "url": "/wrapped/video-kocak.mp4",
+        "placement": "background"
+      }
+    },
+    {
+      "id": "wrap-04",
+      "title": "Bug Paling Bersejarah",
+      "subtitle": "Error Legendaris Kelas",
+      "metric": "Error 404",
+      "metricLabel": "SEMICOLON HILANG DI BARIS 42",
+      "description": "Membuat 4 murid begadang semalaman, padahal solusinya cuma satu titik koma (;).",
+      "bgColor": "#881337",
+      "accentColor": "#FF6B6B",
+      "stickerId": "dev-bug",
+      "media": {
+        "type": "image",
+        "url": "/wrapped/foto-kocak.jpg",
+        "placement": "frame",
+        "caption": "Momen tak terlupakan"
+      }
+    },
+    {
+      "id": "wrap-05",
+      "title": "Quotes Sakti Wali Kelas",
+      "subtitle": "Paling Sering Diucapkan Ibu Ratna",
+      "metric": "\"Anak-anak...\"",
+      "metricLabel": "TUGAS PRAKTIKUM SUDAH DI-PUSH?",
+      "description": "Kalimat yang otomatis membuat seisi lab mendadak hening dan buru-buru buka terminal git.",
+      "bgColor": "#14532D",
+      "accentColor": "#86EFAC",
+      "stickerId": "sekolah-toga"
+    },
+    {
+      "id": "wrap-06",
+      "title": "Soundtrack Resmi Lab",
+      "subtitle": "Top 3 Lagu Paling Sering Diulang",
+      "metric": "Top #1",
+      "metricLabel": "INGATLAH HARI INI — PROJECT POP",
+      "description": "Disusul oleh 'Kisah Klasik' Sheila On 7 dan lofi beats 24 jam non-stop.",
+      "bgColor": "#312E81",
+      "accentColor": "#7DD3FC",
+      "stickerId": "momen-kaset",
+      "extraList": [
+        "1. Ingatlah Hari Ini — Project Pop",
+        "2. Kisah Klasik Untuk Masa Depan — Sheila On 7",
+        "3. Lofi Code & Chill Beats — Sogadev"
+      ]
+    },
+    {
+      "id": "wrap-07",
+      "title": "Indeks Tulalit Kelas",
+      "subtitle": "Tingkat Kelambatan & Kekompakan",
+      "metric": "99.8%",
+      "metricLabel": "KADAR TULALIT MAKSIMAL",
+      "description": "Loading memang sering lambat, tapi kalau urusan solidaritas dan candaan kelas kami nomor satu!",
+      "bgColor": "#78350F",
+      "accentColor": "#FCD34D",
+      "stickerId": "ekspresi-siput"
+    },
+    {
+      "id": "wrap-08",
+      "title": "Selamat Melangkah, Kawan!",
+      "subtitle": "Commit Terakhir Angkatan 2027",
+      "metric": "100%",
+      "metricLabel": "KOMPETEN & LULUS BERSAMA",
+      "description": "Kalian bukan sekadar teman sekelas, kalian adalah keluarga seumur hidup. Sampai jumpa di puncak sukses!",
+      "bgColor": "#09090B",
+      "accentColor": "#F43F5E",
+      "stickerId": "momen-bintang"
+    }
+  ]
+}
