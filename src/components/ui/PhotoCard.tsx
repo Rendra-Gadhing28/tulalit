@@ -21,6 +21,17 @@ interface PhotoCardProps {
   onOpen3D?: (member: Member) => void;
 }
 
+const DEFAULT_PHOTO_POSITIONS: Record<string, string> = {
+  "mem-001": "50% 38%",
+  "mem-002": "68% 58%",
+  "mem-003": "52% 46%",
+  "mem-004": "50% 40%",
+  "mem-005": "48% 44%",
+  "mem-006": "50% 28%",
+  "mem-007": "62% 32%",
+  "mem-008": "50% 30%",
+};
+
 export function PhotoCard({ member, onOpen3D }: PhotoCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [imgError, setImgError] = useState(false);
@@ -173,7 +184,11 @@ export function PhotoCard({ member, onOpen3D }: PhotoCardProps) {
                 alt={member.name}
                 fill
                 sizes="300px"
-                className="object-cover"
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                style={{
+                  objectPosition:
+                    member.photoPosition || DEFAULT_PHOTO_POSITIONS[member.id] || "center",
+                }}
                 onError={() => setImgError(true)}
               />
             ) : (
@@ -190,8 +205,8 @@ export function PhotoCard({ member, onOpen3D }: PhotoCardProps) {
             <h3 className="font-sans font-bold text-base text-ink-navy dark:text-white line-clamp-1">
               {member.name}
             </h3>
-            <p className="font-mono text-xs font-semibold text-accent-coral dark:text-accent-mustard">
-              {member.role}
+            <p className="font-mono text-xs font-semibold text-accent-coral dark:text-accent-mustard min-h-[1.25rem]">
+              {member.role?.trim() || "\u00A0"}
             </p>
 
             {/* Quote Bubble */}

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { getStableRotation, getStableTapeVariant } from "@/lib/random";
@@ -39,7 +39,26 @@ export function Polaroid({
   hasTape = true,
   priority = false,
 }: PolaroidProps) {
+  const [currentSrc, setCurrentSrc] = useState(src);
   const [imgError, setImgError] = useState(false);
+
+  useEffect(() => {
+    setCurrentSrc(src);
+    setImgError(false);
+  }, [src]);
+
+  const handleImageError = () => {
+    if (currentSrc && currentSrc.endsWith(".webp")) {
+      setCurrentSrc(currentSrc.replace(/\.webp$/, ".jpg"));
+    } else if (currentSrc && currentSrc.endsWith(".jpg")) {
+      setCurrentSrc(currentSrc.replace(/\.jpg$/, ".png"));
+    } else if (currentSrc && currentSrc.endsWith(".png")) {
+      setCurrentSrc(currentSrc.replace(/\.png$/, ".jpeg"));
+    } else {
+      setImgError(true);
+    }
+  };
+
   const cardRef = useRef<HTMLDivElement>(null);
   const rotation = getStableRotation(id, 3);
   const tapeVariant = getStableTapeVariant(id);
@@ -133,7 +152,7 @@ export function Polaroid({
 
       {/* Photo Frame */}
       <div className="relative overflow-hidden bg-gray-200 dark:bg-darkbg-base" style={{ borderRadius: 0 }}>
-        {src && !imgError ? (
+        {currentSrc && !imgError ? (
           <div
             className={`relative w-full ${
               aspect === "portrait"
@@ -144,13 +163,13 @@ export function Polaroid({
             }`}
           >
             <Image
-              src={src}
+              src={currentSrc}
               alt={caption}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               priority={priority}
               className="object-cover transition-transform duration-500 group-hover:scale-105"
-              onError={() => setImgError(true)}
+              onError={handleImageError}
             />
           </div>
         ) : (

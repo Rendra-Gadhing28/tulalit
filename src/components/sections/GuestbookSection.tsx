@@ -108,6 +108,22 @@ export function GuestbookSection() {
     ortu: "Orang Tua / Wali",
     alumni: "Alumni",
     adik_kelas: "Adik Kelas",
+    hts: "HTS",
+    temen_lv_2: "Temen Lv 2",
+    crush: "Crush",
+    ridwan: "Ridwan",
+  };
+
+  const relationshipDisplay: Record<GuestbookRelationship, string> = {
+    teman: "Teman",
+    guru: "Guru",
+    ortu: "Orang Tua",
+    alumni: "Alumni",
+    adik_kelas: "Adik Kelas",
+    hts: "HTS",
+    temen_lv_2: "Temen Lv 2",
+    crush: "Crush",
+    ridwan: "Ridwan",
   };
 
   return (
@@ -265,8 +281,8 @@ export function GuestbookSection() {
             <div className="mt-4 pt-2 border-t border-black/10 flex items-center justify-between font-mono text-xs">
               <div>
                 <span className="block font-bold text-ink-brown">{entry.name}</span>
-                <span className="text-[10px] text-ink-muted capitalize">
-                  {entry.relationship.replace("_", " ")}
+                <span className="text-[10px] text-ink-muted">
+                  {relationshipDisplay[entry.relationship] || entry.relationship.replace(/_/g, " ")}
                 </span>
               </div>
 

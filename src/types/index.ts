@@ -14,6 +14,7 @@ export interface Member {
   favoriteLang: string;
   hobby: string;
   photo: string;
+  photoPosition?: string;
   stickers: string[];
   social?: {
     instagram?: string;
@@ -35,11 +36,10 @@ export interface TimelineItem {
 export type GalleryCategory =
   | "Semua"
   | "Kelas"
-  | "PKL"
-  | "Study Tour"
-  | "Lomba"
-  | "Candid"
-  | "Praktikum";
+  | "Nongski"
+  | "Outingclass"
+  | "Outing Class"
+  | "Nyawit";
 
 export interface GalleryItem {
   id: string;
@@ -113,7 +113,11 @@ export type GuestbookRelationship =
   | "guru"
   | "ortu"
   | "alumni"
-  | "adik_kelas";
+  | "adik_kelas"
+  | "hts"
+  | "temen_lv_2"
+  | "crush"
+  | "ridwan";
 
 export interface GuestbookEntry {
   id: string;

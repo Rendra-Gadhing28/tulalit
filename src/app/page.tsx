@@ -77,18 +77,20 @@ export default function Home() {
   return (
     <div className="relative min-h-screen">
       {/* Scroll Progress Bar (ReactBits style) */}
-      <ScrollProgressBar />
+      {!isLoading && <ScrollProgressBar />}
 
       {/* 1. Loading Screen dengan Tulalit Freeze Joke & Auto Benchmark */}
       {isLoading && <LoadingScreen onFinish={() => setIsLoading(false)} />}
 
       {/* 2. Floating Pill Navigation */}
-      <FloatingNav
-        onOpenAchievements={() => setIsAchievementsOpen(true)}
-        onOpenSearch={() => setIsCommandOpen(true)}
-      />
+      {!isLoading && (
+        <FloatingNav
+          onOpenAchievements={() => setIsAchievementsOpen(true)}
+          onOpenSearch={() => setIsCommandOpen(true)}
+        />
+      )}
 
-      <main>
+      <main className={isLoading ? "opacity-0 pointer-events-none select-none max-h-screen overflow-hidden" : "opacity-100 transition-opacity duration-300"}>
         {/* 3. Urutan Section Scrapbook Lengkap */}
         {/* 1. Hero */}
         <HeroSection isLoading={isLoading} />

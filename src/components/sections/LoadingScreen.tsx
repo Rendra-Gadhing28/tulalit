@@ -17,13 +17,20 @@ export function LoadingScreen({ onFinish }: LoadingScreenProps) {
   const { reportFpsBenchmark } = useQuality();
 
   useEffect(() => {
+    try {
+      if (sessionStorage.getItem("tulalit_has_loaded") === "true") {
+        onFinish();
+        return;
+      }
+    } catch {}
+
     let frameCount = 0;
     const startTime = performance.now();
     let animId: number;
 
     const measureFps = (now: number) => {
       frameCount++;
-      if (now - startTime >= 1000) {
+      if (now - startTime >= 400) {
         const fps = Math.round((frameCount * 1000) / (now - startTime));
         reportFpsBenchmark(fps);
       } else {
@@ -32,24 +39,26 @@ export function LoadingScreen({ onFinish }: LoadingScreenProps) {
     };
     animId = requestAnimationFrame(measureFps);
 
-    // Progress percentage sequence with intentional 99% tulalit freeze
-    const t1 = setTimeout(() => setPercent(45), 200);
-    const t2 = setTimeout(() => setPercent(80), 500);
+    // Fast and snappy progress percentage sequence
+    const t1 = setTimeout(() => setPercent(45), 100);
+    const t2 = setTimeout(() => setPercent(80), 250);
     const t3 = setTimeout(() => {
       setPercent(99);
       setIsFrozen(true);
-    }, 800);
+    }, 400);
 
     const t4 = setTimeout(() => {
       setIsFrozen(false);
       setPercent(100);
-      playSfx("whoosh");
       setIsExiting(true);
-    }, 1500);
+    }, 600);
 
     const t5 = setTimeout(() => {
+      try {
+        sessionStorage.setItem("tulalit_has_loaded", "true");
+      } catch {}
       onFinish();
-    }, 2700);
+    }, 850);
 
     return () => {
       cancelAnimationFrame(animId);
@@ -62,9 +71,12 @@ export function LoadingScreen({ onFinish }: LoadingScreenProps) {
   }, [onFinish, reportFpsBenchmark]);
 
   const handleSkip = () => {
-    playSfx("whoosh");
+    playSfx("click");
     setIsExiting(true);
-    setTimeout(onFinish, 600);
+    try {
+      sessionStorage.setItem("tulalit_has_loaded", "true");
+    } catch {}
+    setTimeout(onFinish, 250);
   };
 
   return (
@@ -72,15 +84,14 @@ export function LoadingScreen({ onFinish }: LoadingScreenProps) {
       {!isExiting ? (
         <motion.div
           key="preloader"
-          initial={{ opacity: 0 }}
+          initial={false}
           animate={{ opacity: 1 }}
           exit={{
-            scale: 2.2,
-            filter: "blur(16px)",
             opacity: 0,
+            scale: 1.02,
             transition: {
-              duration: 1.2,
-              ease: physicsEases.cinematic,
+              duration: 0.25,
+              ease: "easeOut",
             },
           }}
           className="fixed inset-0 z-50 flex items-center justify-center bg-paper-base dark:bg-darkbg-base select-none overflow-hidden"

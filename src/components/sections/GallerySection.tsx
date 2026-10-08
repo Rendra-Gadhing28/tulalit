@@ -18,23 +18,50 @@ import { ScrollStaggerItem } from "@/components/ui/ScrollReveal";
 const CATEGORIES: GalleryCategory[] = [
   "Semua",
   "Kelas",
-  "PKL",
-  "Study Tour",
-  "Lomba",
-  "Candid",
-  "Praktikum",
+  "Nongski",
+  "Outingclass",
+  "Nyawit",
 ];
 
 export function GallerySection() {
   const [selectedCategory, setSelectedCategory] = useState<GalleryCategory>("Semua");
   const [activeLightboxIndex, setActiveLightboxIndex] = useState<number | null>(null);
+  const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
+  const [lightboxImgError, setLightboxImgError] = useState(false);
 
   const filteredItems: GalleryItem[] =
     selectedCategory === "Semua"
       ? (galleryData as GalleryItem[])
       : (galleryData as GalleryItem[]).filter(
-          (item) => item.category === selectedCategory
+          (item) =>
+            item.category === selectedCategory ||
+            (selectedCategory === "Outingclass" &&
+              (item.category as string) === "Outing Class") ||
+            (selectedCategory === "Outing Class" &&
+              (item.category as string) === "Outingclass")
         );
+
+  useEffect(() => {
+    if (activeLightboxIndex !== null && filteredItems[activeLightboxIndex]) {
+      setLightboxSrc(filteredItems[activeLightboxIndex].src || null);
+      setLightboxImgError(false);
+    } else {
+      setLightboxSrc(null);
+      setLightboxImgError(false);
+    }
+  }, [activeLightboxIndex, filteredItems]);
+
+  const handleLightboxImgError = () => {
+    if (lightboxSrc && lightboxSrc.endsWith(".webp")) {
+      setLightboxSrc(lightboxSrc.replace(/\.webp$/, ".jpg"));
+    } else if (lightboxSrc && lightboxSrc.endsWith(".jpg")) {
+      setLightboxSrc(lightboxSrc.replace(/\.jpg$/, ".png"));
+    } else if (lightboxSrc && lightboxSrc.endsWith(".png")) {
+      setLightboxSrc(lightboxSrc.replace(/\.png$/, ".jpeg"));
+    } else {
+      setLightboxImgError(true);
+    }
+  };
 
   const handleOpenLightbox = (index: number) => {
     playSfx("camera-shutter");
@@ -99,7 +126,7 @@ export function GallerySection() {
       <SectionTitle
         badge="Galeri Scrapbook"
         title="Album Foto Polaroid"
-        subtitle="Potret candid, momen lomba, keseruan study tour, dan rutinitas praktikum selama 3 tahun."
+        subtitle="Momen seragam kelas, nongski bareng, keseruan outing class, hingga potret nyawit paling random."
       />
 
       {/* Category Filter Pills */}
@@ -186,20 +213,21 @@ export function GallerySection() {
 
               {/* Photo Big Display with Darkroom Reveal simulation */}
               <div className="relative w-full max-h-[60vh] aspect-[4/3] rounded-lg overflow-hidden bg-black/10 dark:bg-black/40 flex items-center justify-center shadow-inner">
-                {currentItem.src ? (
+                {lightboxSrc && !lightboxImgError ? (
                   <motion.div
-                    key={currentItem.src}
+                    key={lightboxSrc}
                     initial={{ filter: "brightness(0.5) sepia(0.6)", opacity: 0.8 }}
                     animate={{ filter: "brightness(1) sepia(0)", opacity: 1 }}
                     transition={{ duration: 0.65, ease: "easeOut" }}
                     className="relative w-full h-full"
                   >
                     <Image
-                      src={currentItem.src}
+                      src={lightboxSrc}
                       alt={currentItem.caption}
                       fill
                       sizes="1000px"
                       className="object-contain"
+                      onError={handleLightboxImgError}
                     />
                   </motion.div>
                 ) : (

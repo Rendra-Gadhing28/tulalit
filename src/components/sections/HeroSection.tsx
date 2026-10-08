@@ -44,7 +44,6 @@ export function HeroSection({ isLoading = false }: HeroSectionProps) {
   const headerRef = useRef<HTMLDivElement>(null);
   const visualRef = useRef<HTMLDivElement>(null);
   const buttonsRef = useRef<HTMLDivElement>(null);
-  const hasIntroPlayed = useRef(false);
 
   // Scroll parallax transforms with spring smoothing to eliminate jitter
   const { scrollYProgress } = useScroll({
@@ -79,10 +78,6 @@ export function HeroSection({ isLoading = false }: HeroSectionProps) {
       if (!isDeleting) {
         const nextText = fullText.substring(0, currentText.length + 1);
         setCurrentText(nextText);
-        // Play crisp typewriter sound every 4 characters
-        if (nextText.length % 4 === 0) {
-          playSfx("typewriter");
-        }
         if (nextText === fullText) {
           setTimeout(() => setIsDeleting(true), 2200);
         }
@@ -106,12 +101,6 @@ export function HeroSection({ isLoading = false }: HeroSectionProps) {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({
         delay: 0.35,
-        onStart: () => {
-          if (!hasIntroPlayed.current) {
-            playSfx("whoosh");
-            hasIntroPlayed.current = true;
-          }
-        },
       });
 
       // 1. Header Card / Title drops from top with elastic spring landing

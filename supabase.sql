@@ -7,7 +7,7 @@
 create table if not exists public.guestbook (
   id uuid primary key default gen_random_uuid(),
   name text not null check (char_length(name) between 2 and 40),
-  relationship text not null check (relationship in ('teman', 'guru', 'ortu', 'alumni', 'adik_kelas')),
+  relationship text not null check (relationship in ('teman', 'guru', 'ortu', 'alumni', 'adik_kelas', 'hts', 'temen_lv_2', 'crush', 'ridwan')),
   message text not null check (char_length(message) between 3 and 280),
   color text not null default 'mustard',
   created_at timestamp with time zone default timezone('utc'::text, now()) not null
